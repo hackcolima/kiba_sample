@@ -1,0 +1,11 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  pool: 15
+
+development: &development
+  <<: *default
+  database: simple_store_development
+  reconnect: true
+  pool: 15
